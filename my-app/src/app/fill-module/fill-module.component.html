@@ -1,0 +1,7 @@
+<form (submit)=SaveData() id='form' action="submit">
+<input type="text"  ng-model="id" id='id' required>
+<input  type="text" [(ngModel)]="name" required>
+<input [(ngModel)]="date" type="datetime" id='date' required>
+<input [(ngModel)]="price" type="text" id='price'>
+<button type='submit'></button>
+</form>
