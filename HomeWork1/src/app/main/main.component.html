@@ -1,0 +1,9 @@
+<form action="">
+    <p>Страна:</p><br>
+    <input type="text" name='country' [(ngModel)]='country'><br>
+    <p>Город:</p><br>
+    <input type="text" name='city' [(ngModel)]='city'> <br>
+    <br><button style="color: green" (click)='SaveData()'> добавить</button>
+</form><br>
+<p *ngFor="let obj of objects">{{obj}}</p>
+<a routerLink="/login" routerLinkActive="active">Зарегаться</a>
